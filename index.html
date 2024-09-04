@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon " href="./Images/logo.png" type="/Images/x-icon">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <title>yummy</title>
+</head>
+
+<body>
+
+
+    <div
+        class="loading position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center ">
+        <span class="loader">Loading</span>
+    </div>
+
+    <div class="nav h-100  position-fixed d-flex ">
+        <div class="nav-tab d-flex flex-column justify-content-between h-100 p-4 mt-4">
+            <div class="nav-links">
+                <ul class="list-unstyled">
+                    <li onclick="getSearchInputs()" class="py-2 position-relative animate__slideInDown">Search</li>
+                    <li onclick="getCatagories()" class="py-2 position-relative animate__slideInDown"> Categories </li>
+                    <li onclick="getArea()" class="py-2 position-relative animate__slideInDown">Area</li>
+                    <li onclick="getIngredients()" class="py-2 position-relative animate__slideInDown">Ingredients</li>
+                    <li onclick="getContacts()" class="py-2 position-relative animate__slideInDown">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright A@ 2019 All Right <br> Reserved</p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="nav-Header d-flex  flex-column  justify-content-between  text-center py-4 px-2 bg-white text-black ">
+            <img src="/Images/logo.png " alt="" class="logo">
+            <i class="fa-solid fa-align-justify open-close-icon fa-2xl"></i>
+            <div class="icons text-black">
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+
+        </div>
+    </div>
+    <div class="container w-75" id="searchName">
+
+    </div>
+    <div class="container">
+        <div class="row py-5 g-4 " id="RowData">
+
+        </div>
+    </div>
+
+
+
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/jquery-3.7.1.min.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
